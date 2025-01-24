@@ -1,6 +1,6 @@
 package lv0;
 
-class Solution {
+class Solution8 {
     public String solution(String nickname) {
         String answer = "";
         for(int i=0; i<nickname.length(); i++){

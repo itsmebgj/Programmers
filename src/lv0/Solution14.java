@@ -1,6 +1,6 @@
 package lv0;
 
-class Solution {
+class Solution14 {
     public String[] solution(int[] numbers, int[] our_score, int[] score_list) {
         int num_student = numbers.length;
         String[] answer = new String[num_student];

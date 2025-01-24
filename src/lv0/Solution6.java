@@ -1,6 +1,6 @@
 package lv0;
 
-class Solution {
+class Solution6 {
     public int solution(int storage, int usage, int[] change) {
         int total_usage = 0; //총 물 사용량
 

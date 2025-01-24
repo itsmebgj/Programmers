@@ -1,6 +1,6 @@
 package lv0;
 
-class Solution {
+class Solution7 {
     public int solution(int seat, String[][] passengers) {
         int num_passenger = 0;
         for(int i=0; i<passengers.length; i++){

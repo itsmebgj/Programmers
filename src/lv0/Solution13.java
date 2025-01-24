@@ -1,6 +1,6 @@
 package lv0;
 
-class Solution {
+class Solution13 {
     public int[] solution(String route) {
         int east = 0;
         int north = 0;

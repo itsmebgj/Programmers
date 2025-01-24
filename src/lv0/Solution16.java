@@ -1,6 +1,6 @@
 package lv0;
 
-class Solution {
+class Solution16 {
     public String solution(String[] storage, int[] num) {
         int num_item = 0; //item 개수
         String[] clean_storage = new String[storage.length]; 
