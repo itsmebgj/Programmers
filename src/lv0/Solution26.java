@@ -2,15 +2,11 @@ package lv0;
 
 class Solution26 {
     public String solution(String my_string, String overwrite_string, int s) {
-        String answer = "";
 
-        for(int i=0; i<my_string.length(); i++){
-            if(i == s){
-                answer += overwrite_string.substring(0);
-            }else{
-                answer += my_string.substring(0, i);
-            }
-        }
+        String first = my_string.substring(0, s);
+        String last = my_string.substring(s + overwrite_string.length());
+        String answer = first + overwrite_string + last;
+        
         return answer;
     }
 }
