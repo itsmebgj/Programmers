@@ -1,22 +1,24 @@
 package lv0;
 
+import java.util.ArrayList;
+
 class Solution46 {
     public int[] solution(int n) {
-        int[] answer = new int[n];
+        ArrayList<Integer> sequence = new ArrayList<>();
+        sequence.add(n);
 
-        answer[0] = n;
-        for(int i = 0; i < n; i++){
-            
+        while(n != 1){
             if(n % 2 == 0){
-            answer[i + 1] = n % 2;
-        }else if(n % 2 != 0){
-            answer[i+1]  + 1;
+                n /= 2;
+            }else{
+                n = n * 3 + 1;
+            }
+                sequence.add(n);
         }
 
-            if(n == 1){
-                
-                break;
-            }
+        int[] answer = new int[sequence.size()];
+        for(int i = 0; i < sequence.size(); i++){
+            answer[i] = sequence.get(i);
         }
 
         return answer;
