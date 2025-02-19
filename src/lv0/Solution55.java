@@ -5,12 +5,11 @@ import java.util.ArrayList;
 class Solution55 {
     public int[] solution(String[] intStrs, int k, int s, int l) {
         ArrayList<Integer> answer = new ArrayList<>();
-        int[] result = new int[intStrs.length];
 
         for(int i = 0; i < intStrs.length; i++){
-            result[i] = Integer.parseInt(intStrs[i].substring(s, l));
-            if(result[i] > k){
-                answer.add(result[i]);
+            int value = Integer.parseInt(intStrs[i].substring(s, s+l));
+            if(value > k){
+                answer.add(value);
             }
         }
 
@@ -19,6 +18,6 @@ class Solution55 {
             answerArr[i] = answer.get(i);
         }
         return answerArr;
-        
+    
     }
 }
